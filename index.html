@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhyaz Internship Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Abhyaz Internship Feedback Form</h2>
+        <form id="feedbackForm" action="submit.php" method="post">
+            <div class="section">
+                <h3>Intern Information</h3>
+                <label for="name">Name : </label>
+                <input type="text" id="name" name="name" required></br>
+                <label for="email_id">Email : </label>
+                <input type = "email" id="email_id" name="email_id" required></br>
+                <label for="start_date">Start Date : </label>
+                <input type = "date" id="start_date" name="start_date" required></br>
+                <label for="end_date">End Date : </label>
+                <input type = "date" id="end_date" name="end_date" required></br>
+            </div>
+            
+
+            <div class="section">
+                <h3>How would you rate your overall experience during the internship?</h3>
+                <input type="radio" id="exp1" name="exp" value="1" required>
+                <label for="exp1">1</label>
+                <input type="radio" id="exp2" name="exp" value="2" required>
+                <label for="exp2">2</label>
+                <input type="radio" id="exp3" name="exp" value="3" required>
+                <label for="exp3">3</label>
+                <input type="radio" id="exp4" name="exp" value="4" required>
+                <label for="exp4">4</label>
+                <input type="radio" id="exp5" name="exp" value="5" required>
+                <label for="exp5">5</label>
+            </div>
+
+            <div class="section">
+                <h3>Did the internship program meet your expectations? Please explain.</h3>
+                <textarea id="expectations" name="expectations" rows="4" cols="80" required></textarea>
+            </div>
+            
+            <div class="section">
+                <h3>Did you find the training and learning materials provided helpful and relevant to your growth?</h3>
+                <textarea id="training" name="training" rows="4" cols="80" required></textarea>
+            </div>
+            
+            <div class="section">
+                <h3>How would you rate the mentorship and support provided during the internship?</h3>
+                <input type="radio" id="mentorship1" name="mentorship" value="m1" required>
+                <label for="mentorship1">1</label>
+                
+                <input type="radio" id="mentorship2" name="mentorship" value="m2">
+                <label for="mentorship2">2</label>
+                
+                <input type="radio" id="mentorship3" name="mentorship" value="m3">
+                <label for="mentorship3">3</label>
+                
+                <input type="radio" id="mentorship4" name="mentorship" value="m4">
+                <label for="mentorship4">4</label>
+                
+                <input type="radio" id="mentorship5" name="mentorship" value="m5">
+                <label for="mentorship5">5</label>
+            </div>
+            
+            <div class="section">
+                <h3>Did you find the projects and assignments challenging and engaging?</h3>
+                <textarea id="projects" name="projects" rows="4" cols="80" required></textarea>
+            </div>
+            
+            <div class="section">
+                <h3>Do you have any suggestions or feedback for improving the internship program?</h3>
+                <textarea id="improvement" name="improvement" rows="4" cols="80" required></textarea>
+            </div>
+            
+            <div class="section">
+                <h3>Any additional Comments?</h3>
+                <textarea id="comments" name="comments" rows="4" cols="80" required></textarea>
+            </div>
+            
+            <div class="section">
+                <h3>Would you recommend Abhyaz internship programs to others?</h3>
+                <input type="radio" id="recommendYes" name="recommend" value="Yes" required>
+                <label for="recommendYes">Yes</label>
+                <input type="radio" id="recommendNo" name="recommend" value="No">
+                <label for="recommendNo">No</label>
+            </div>
+            <br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    
+    <!-- Can add link to your JavaScript file -->
+</body>
+</html>
